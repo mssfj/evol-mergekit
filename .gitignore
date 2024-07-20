@@ -1,0 +1,7 @@
+# mergekit生成物と一時ファイルはgit共有しない
+/mergekit
+/evol_merge_storage
+/final_merge
+/wandb
+/outcmaes
+__pycache__/

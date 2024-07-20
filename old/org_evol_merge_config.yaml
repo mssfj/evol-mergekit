@@ -1,0 +1,15 @@
+genome:
+    models:
+      #- mistralai/Mistral-7B-Instruct-v0.3
+      #- mistralai/Mistral-7B-Instruct-v0.1
+      - Rakuten/RakutenAI-7B-chat
+      #- Rakuten/RakutenAI-7B-chat
+    merge_method: task_arithmetic
+    base_model: tokyotech-llm/Swallow-MS-7b-instruct-v0.1
+    layer_granularity: 8 # sane default
+    allow_negative_weights: true # useful with task_arithmetic
+tasks:
+  - name: alpaca_prompt_format
+    weight: 0.4
+  - name: spartqa_train
+    weight: 0.6
