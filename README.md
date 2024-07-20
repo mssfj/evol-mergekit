@@ -1,29 +1,25 @@
-# $B?J2=E*%b%G%k%^!<%8$N$*;n$7%9%/%j%W%H(B
+# mergekitによるevolve-mergeのお試しスクリプト 
 
-mergekit$B$r;H$C$??J2=E*%b%G%k%^!<%8$K$h$k(Bllm$B$N@-G=8~>e$r8!>Z$7$^$9!#(B
-$B!c;29M(BURL$B!d(Bhttps://note.com/npaka/n/nb9abed7b1ecf
+# 参考URL
+https://note.com/npaka/n/nb9abed7b1ecf
+https://soysoftware.sakura.ne.jp/archives/3872
 
-## $BL\<!(B
-
-- [$B4D6-@_Dj(B]$B#1(B(#$B4D6-@_Dj(B)
-
-
-## $B4D6-@_Dj(B
-### ~/.bashrc$B$K0J2<$N4D6-JQ?t$r@_Dj(B
+## 設定
+### ~/.bashrcに各種アクセストークンを
 
 export LANG='ja_JP.UTF-8'
 export WANDB_API_KEY="**************************************"
-export OPENAI_API_KEY="******************************************"
+export OPENAI_API_KEY="******************************************" #評価にGPT-4oを使う場合 
 export HUGGINGFACE_TOKEN="**************************************"
 export WANDB_ENTITY="********"
 export PATH="$HOME/.local/bin:$PATH"
 
-### $BJQ99$rH?1G(B
+### bashに反映
 source ~/.bashrc
 
-### conda$B$G2>A[4D6-$r%"%/%F%#%Y!<%H(B
-#### conda$B$,L$%$%s%9%H!<%k$N>l9g$O!"(Bsetup$B%9%/%j%W%H$N%3%a%s%H%"%&%H$7$F%$%s%9%H!<%k(B
+### conda仮想環境をアクティベート
+#### condaが未インストールの場合はセットアップスクリプトのコメントアウト
 conda activate merge
 
-### $B%;%C%H%"%C%W%9%/%j%W%H$r<B9T(B
+### セットアップスクリプトの実行
 bash mergekit-setup.sh
