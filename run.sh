@@ -13,7 +13,7 @@ fi
 mergekit-evolve ./eval_tasks/evol_merge_config.yaml \
 --storage-path ./evol_merge_storage \
 --task-search-path ./eval_tasks \
---wandb \
+--no-wandb \
 --merge-cuda \
 --vllm \
 #--in-memory \

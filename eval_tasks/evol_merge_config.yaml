@@ -6,5 +6,5 @@ genome:
     layer_granularity: 4 # sane default
     allow_negative_weights: true # useful with task_arithmetic
 tasks:
-  - name: elyzatasks100
+  - name: jmtbench
     weight: 1.0

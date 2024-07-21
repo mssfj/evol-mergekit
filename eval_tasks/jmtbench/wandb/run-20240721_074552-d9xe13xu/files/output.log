@@ -1,0 +1,24 @@
+Checking artifact: wandb-japan/llm-leaderboard/mtbench_ja_question:v0
+Files in the artifact:
+ - /home/ubuntu/jmtbench-check/artifacts/mtbench_ja_question:v0/question.jsonl
+Content preview of question.jsonl:
+{"question_id": 1, "category": "coding", "turns": ["ディレクトリ内の全てのテキストファイルを読み込み、出現回数が最も多い上位5単語を返すPythonプログラムを開発してください。", "それを並列化（parallelize）することは可能ですか？"]}
+{"question_id": 2, "category": "coding", "turns": ["再帰（recursion）を用いてn番目のフィボナッチ数（Fibonacci number）を求めるC++プログラムを書いてください。", "今度は、各数が前の3つの数の和である数列を考えます。最初の3つの数は0、-1、-1です。n番目の数を求めるプログラムを書いてください。"]}
+{"question_id": 3, "category": "coding", "turns": ["HTMLでシンプルなウェブサイトを作成してください。ユーザーがボタンをクリックすると、4つのジョークからランダムに一つ表示されます。", "CSSを使ってジョークの色を赤にする方法は何ですか？"]}
+{
+==================================================
+Checking artifact: wandb-japan/llm-leaderboard/mtbench_ja_referenceanswer:v0
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+Files in the artifact:
+ - /home/ubuntu/jmtbench-check/artifacts/mtbench_ja_referenceanswer:v0/gpt-4.jsonl
+Content preview of gpt-4.jsonl:
+{"question_id": 1, "answer_id": "LR5WzLKVu7at6J8b7prcz2", "model_id": "gpt-4", "choices": [{"index": 0, "turns": ["以下に、ディレクトリ内の全てのテキストファイルを読み込んで、出現回数が最も多い上位5単語を返すPythonプログラムを示します。\n\n```python\nimport os\nimport collections\nfrom collections import Counter\nimport glob\n\ndef count_words_in_dir(dir_path, top_n):\n    word_counter = Counter()\n    \n    txt_files = glob.glob(os.path.join(dir_path, '*.txt'))\n\n    for txt_file in txt_files:\n        with open(txt_file, 'r') as file:\n
+==================================================
+Checking artifact: wandb-japan/llm-leaderboard/mtbench_ja_prompt:v1
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+Files in the artifact:
+ - /home/ubuntu/jmtbench-check/artifacts/mtbench_ja_prompt:v1/judge_prompts.jsonl
+Content preview of judge_prompts.jsonl:
+{"name": "pair-v2", "type": "pairwise", "system_prompt": "Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider factors such as the helpfulness, relevance, accuracy, depth, creativity, and level of detail of their responses. Begin your evaluation by comparing the two re
+==================================================

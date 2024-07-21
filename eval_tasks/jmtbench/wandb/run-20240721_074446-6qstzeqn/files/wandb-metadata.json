@@ -1,0 +1,122 @@
+{
+    "os": "Linux-6.5.0-1020-aws-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-07-21T07:44:47.233558",
+    "startedAt": "2024-07-21T07:44:46.741518",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/ubuntu/jmtbench-check/jmtbench_check.py",
+    "codePathLocal": "jmtbench_check.py",
+    "codePath": "jmtbench_check.py",
+    "host": "ip-172-31-15-195",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/miniconda3/envs/evol/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2977.1478124999994,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.548,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2400.666,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3141.708,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3282.797,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3283.117,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3269.615,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3287.162,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3284.993,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3287.923,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 193.6498260498047,
+            "used": 80.54846572875977
+        }
+    },
+    "gpu": "NVIDIA A10G",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A10G",
+            "memory_total": 24146608128
+        }
+    ],
+    "memory": {
+        "total": 62.093788146972656
+    }
+}

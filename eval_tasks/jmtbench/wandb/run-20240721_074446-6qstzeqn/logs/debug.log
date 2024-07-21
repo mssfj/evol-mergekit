@@ -1,0 +1,40 @@
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Current SDK version is 0.17.5
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Configure stats pid to 3626
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/.config/wandb/settings
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/jmtbench-check/wandb/settings
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'entity': 'mss-fujimoto'}
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'jmtbench_check.py', 'program_abspath': '/home/ubuntu/jmtbench-check/jmtbench_check.py', 'program': '/home/ubuntu/jmtbench-check/jmtbench_check.py'}
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_init.py:_log_setup():529] Logging user logs to /home/ubuntu/jmtbench-check/wandb/run-20240721_074446-6qstzeqn/logs/debug.log
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_init.py:_log_setup():530] Logging internal logs to /home/ubuntu/jmtbench-check/wandb/run-20240721_074446-6qstzeqn/logs/debug-internal.log
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_init.py:init():569] calling init triggers
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_init.py:init():619] starting backend
+2024-07-21 07:44:46,742 INFO    MainThread:3626 [wandb_init.py:init():623] setting up manager
+2024-07-21 07:44:46,745 INFO    MainThread:3626 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-21 07:44:46,746 INFO    MainThread:3626 [wandb_init.py:init():631] backend started and connected
+2024-07-21 07:44:46,751 INFO    MainThread:3626 [wandb_init.py:init():720] updated telemetry
+2024-07-21 07:44:46,751 INFO    MainThread:3626 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-21 07:44:47,148 INFO    MainThread:3626 [wandb_run.py:_on_init():2435] communicating current version
+2024-07-21 07:44:47,168 INFO    MainThread:3626 [wandb_run.py:_on_init():2444] got version response 
+2024-07-21 07:44:47,169 INFO    MainThread:3626 [wandb_init.py:init():804] starting run threads in backend
+2024-07-21 07:44:49,755 WARNING MainThread:3626 [wandb_init.py:init():1185] interrupted
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    return wi.init()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 817, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/ubuntu/miniconda3/envs/evol/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/ubuntu/miniconda3/envs/evol/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2024-07-21 07:44:55,574 WARNING MsgRouterThr:3626 [router.py:message_loop():77] message_loop has been closed

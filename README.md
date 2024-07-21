@@ -13,12 +13,13 @@ export OPENAI_API_KEY="******************************************" #評価にGPT
 export HUGGINGFACE_TOKEN="**************************************"  
 export WANDB_ENTITY="********"  
 export PATH="$HOME/.local/bin:$PATH"  
+export DEEPINFRA_API_KEY="*************************************"  #評価にDeepinfreのモデルをAPIで使う場合
+
 
 ### bashに反映
 source ~/.bashrc  
 
-### conda仮想環境をアクティベート
-#### condaが未インストールの場合はセットアップスクリプトのコメントアウト
+### conda仮想環境をアクティベート　condaが未インストールの場合はセットアップスクリプトのコメントアウト
 conda activate merge  
 
 ### セットアップスクリプトの実行
