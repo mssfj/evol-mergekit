@@ -8,7 +8,7 @@
 
 # conda create --name merge python=3.10
 # conda activate merge
-
+python -m pip install torch torchvision torchaudio
 python -m pip  install flash-attn
 
 # mergekitの取得

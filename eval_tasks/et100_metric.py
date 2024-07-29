@@ -5,9 +5,9 @@ import numpy as np
 import datasets
 from lm_eval.utils import eval_logger
 from itertools import islice
-from openai import OpenAI
+#from openai import OpenAI
 
-# DeepInfra API key from environment variable
+# DeepInfra API key
 DEEPINFRA_API_KEY = os.environ.get('DEEPINFRA_API_KEY')
 
 # Check if the API key is available
