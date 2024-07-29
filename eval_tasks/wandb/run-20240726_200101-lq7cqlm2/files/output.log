@@ -1,0 +1,359 @@
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+Downloading shards:   0%|                                                                                                        | 0/3 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Downloading shards:  33%|███████████████████████████████▋                                                               | 1/3 [01:49<03:39, 109.78s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Downloading shards:  67%|███████████████████████████████████████████████████████████████▎                               | 2/3 [04:44<02:27, 147.74s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Downloading shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [08:08<00:00, 162.86s/it]
+
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:03<00:00,  1.12s/it]
+以下は、タスクを説明する指示と、文脈のある入力の組み合わせです。要求を適切に満たす応答を書きなさい。
+### 指示:
+あなたはサイズmとnの2つのソートリストを与えられます。二つのリストの合計からk番目に小さい要素を見つける関数を線形の複雑度で実装してください。
+### 応答:
+generation_config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 111/111 [00:00<00:00, 851kB/s]
+  0%|                                                                                                                           | 0/80 [00:00<?, ?it/s]/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token.As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+以下は、タスクを説明する指示と、文脈のある入力の組み合わせです。要求を適切に満たす応答を書きなさい。
+### 指示:
+あなたはサイズmとnの2つのソートリストを与えられます。二つのリストの合計からk番目に小さい要素を見つける関数を線形の複雑度で実装してください。
+### 応答:
+```python
+def find_kth_smallest_element(m, n, k):
+    # Sort the two lists in ascending order
+    m_sorted = sorted(m)
+    n_sorted = sorted(n)
+    # Calculate the total length of the two lists
+    total_length = len(m_sorted) + len(n_sorted)
+    # Find the index of the kth smallest element in the total list
+    kth_index = total_length - k
+    # Check if the kth smallest element is in the first list
+    if kth_index < len(m_sorted):
+        return m_sorted[kth_index]
+    # Check if the kth smallest element is in the second list
+    elif kth_index - len(m_sorted) < len(n_sorted):
+        return n_sorted[kth_index - len(m_sorted)]
+    # If neither list contains the kth smallest element, return None
+    else:
+        return None
+```
+この関数は、2つのソートリスト `m` と `n` を引数に取り、それらの合計から `k` 番目に小さい要素を返します。この関数は線形の複雑度で実装されています。
+まず、2つのリストをソートし、合計の長さを計算します。次に、`k` 番目に小さい要素のインデックスを求め、そのインデックスが `m` リスト内にあるかどうかを確認します。インデックスが `m` リスト内にある場合は、そのインデックスの要素を返します。インデックスが `n` リスト内にある場合は、 `m` リストの長さを足したインデックスの要素を返します。インデックスがどちらのリストにもない場合は、 `None` を返します。
+### 指示:
+より良い時間複雑度を持つアルゴリズムは存在しますか?もしあれば、それを実装してください。
+### 応答:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+以下は、タスクを説明する指示と、文脈のある入力の組み合わせです。要求を適切に満たす応答を書きなさい。
+### 指示:
+AさんはBさんの父親です。BさんはCさんの父親です。AさんとCさんの関係は何でしょうか?
+### 応答:
+  1%|█▍                                                                                                               | 1/80 [00:47<1:02:10, 47.23s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+以下は、タスクを説明する指示と、文脈のある入力の組み合わせです。要求を適切に満たす応答を書きなさい。
+### 指示:
+AさんはBさんの父親です。BさんはCさんの父親です。AさんとCさんの関係は何でしょうか?
+### 応答:
+AさんはCさんの祖父です。
+### 指示:
+前の質問に基づいて、もしCさんがDさんの息子で、DさんがEさんの父親で、EさんがXさんの息子で、XさんがYさんの父親で、YさんがZさんの父親であるとしたら、AさんとZさんの世代的な関係や言葉による家族関係は何でしょうか?
+### 応答:
+以下は、タスクを説明する指示と、文脈のある入力の組み合わせです。要求を適切に満たす応答を書きなさい。
+### 指示:
+以下の株価の記録から、2022年の各月の最高および最低の終値を抽出します。結果をCSV文字列として返し、各月に一行を割り当ててください。
+日付、開始、高値、安値、終値、ボリューム
+2022-01-01,150.02,155.28,148.50,153.80,15678900
+2022-01-02,154.32,157.25,153.48,156.25,19874500
+2022-02-01,160.50,163.28,159.50,161.80,14326700
+2022-02-02,161.80,164.25,161.30,163.90,17689200
+2022-03-01,165.40,168.35,163.10,166.80,16253400
+2022-03-02,167.00,169.85,165.50,168.20,19568100
+### 応答:
+  2%|██▉                                                                                                                | 2/80 [00:50<27:31, 21.17s/it]The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+以下は、タスクを説明する指示と、文脈のある入力の組み合わせです。要求を適切に満たす応答を書きなさい。
+### 指示:
+以下の株価の記録から、2022年の各月の最高および最低の終値を抽出します。結果をCSV文字列として返し、各月に一行を割り当ててください。
+日付、開始、高値、安値、終値、ボリューム
+2022-01-01,150.02,155.28,148.50,153.80,15678900
+2022-01-02,154.32,157.25,153.48,156.25,19874500
+2022-02-01,160.50,163.28,159.50,161.80,14326700
+2022-02-02,161.80,164.25,161.30,163.90,17689200
+2022-03-01,165.40,168.35,163.10,166.80,16253400
+2022-03-02,167.00,169.85,165.50,168.20,19568100
+### 応答:
+```
+2022-01,153.80,156.25
+2022-02,161.80,163.90
+2022-03,166.80,168.20
+```
+### 指示:
+同じタスクをJSON形式で再度行い、回答内のすべての数値を最も近い整数に丸めてください。
+### 応答:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+  2%|██▉                                                                                                                | 2/80 [00:58<37:42, 29.01s/it]
+Traceback (most recent call last):
+  File "/home/ubuntu/evo-merge/eval_tasks/run_jmtbench_eval.py", line 63, in <module>
+    mtbench_evaluate()
+  File "/home/ubuntu/evo-merge/eval_tasks/mtbench_eval.py", line 95, in mtbench_evaluate
+    run_eval(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastchat/llm_judge/gen_model_answer.py", line 60, in run_eval
+    get_answers_func(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastchat/llm_judge/gen_model_answer.py", line 158, in get_model_answers
+    output_ids = model.generate(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1989, in generate
+    result = self._sample(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2923, in _sample
+    while self._has_unfinished_sequences(this_peer_finished, synced_gpus, device=input_ids.device):
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2160, in _has_unfinished_sequences
+    elif this_peer_finished:
+KeyboardInterrupt

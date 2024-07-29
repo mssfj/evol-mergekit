@@ -1,0 +1,74 @@
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+tokenizer_config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████| 2.11k/2.11k [00:00<00:00, 15.9MB/s]
+tokenizer.model: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 903k/903k [00:00<00:00, 60.3MB/s]
+special_tokens_map.json: 100%|███████████████████████████████████████████████████████████████████████████████████████| 72.0/72.0 [00:00<00:00, 593kB/s]
+tokenizer.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 2.25M/2.25M [00:00<00:00, 2.59MB/s]
+model.safetensors.index.json: 100%|████████████████████████████████████████████████████████████████████████████████| 23.9k/23.9k [00:00<00:00, 115MB/s]
+Downloading shards:   0%|                                                                                                        | 0/3 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Downloading shards:   0%|                                                                                                        | 0/3 [00:32<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ubuntu/evo-merge/eval_tasks/run_jmtbench_eval.py", line 63, in <module>
+    mtbench_evaluate()
+  File "/home/ubuntu/evo-merge/eval_tasks/mtbench_eval.py", line 95, in mtbench_evaluate
+    run_eval(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastchat/llm_judge/gen_model_answer.py", line 60, in run_eval
+    get_answers_func(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastchat/llm_judge/gen_model_answer.py", line 115, in get_model_answers
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3671, in from_pretrained
+    resolved_archive_file, sharded_metadata = get_checkpoint_shard_files(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/utils/hub.py", line 1079, in get_checkpoint_shard_files
+    cached_filename = cached_file(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/utils/hub.py", line 402, in cached_file
+    resolved_file = hf_hub_download(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+    return f(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1240, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1389, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1915, in _download_to_tmp_and_move
+    http_get(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 549, in http_get
+    for chunk in r.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/urllib3/response.py", line 936, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/urllib3/response.py", line 879, in read
+    data = self._raw_read(amt)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/urllib3/response.py", line 814, in _raw_read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/urllib3/response.py", line 799, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/http/client.py", line 466, in read
+    s = self.fp.read(amt)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt

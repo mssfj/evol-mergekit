@@ -6,10 +6,10 @@ output_type: generate_until
 training_split: null
 test_split: train
 #doc_to_text プロンプトを生成する
-doc_to_text: !function jmtbench_metric.generate_prompt
+doc_to_text: !function jmtbench_metric2.jmtbench_eval
 doc_to_target: ""
 #process_results スコアを返す
-process_results: !function jmtbench_metric.process_results
+process_results: !function jmtbench_metric2.process_results
 metric_list:
   - metric: score
     aggregation: mean

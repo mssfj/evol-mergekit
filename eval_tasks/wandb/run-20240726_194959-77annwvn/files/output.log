@@ -1,0 +1,24 @@
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+Traceback (most recent call last):
+  File "/home/ubuntu/evo-merge/eval_tasks/run_jmtbench_eval.py", line 63, in <module>
+    mtbench_evaluate()
+  File "/home/ubuntu/evo-merge/eval_tasks/mtbench_eval.py", line 95, in mtbench_evaluate
+    run_eval(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastchat/llm_judge/gen_model_answer.py", line 60, in run_eval
+    get_answers_func(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastchat/llm_judge/gen_model_answer.py", line 104, in get_model_answers
+    tokenizer: PreTrainedTokenizerBase = AutoTokenizer.from_pretrained(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 853, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 972, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/configuration_utils.py", line 632, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/home/ubuntu/miniconda3/envs/new_env/lib/python3.10/site-packages/transformers/utils/hub.py", line 373, in cached_file
+    raise EnvironmentError(
+OSError: /home/ubuntu/evo-merge/final_merge/ does not appear to have a file named config.json. Checkout 'https://huggingface.co//home/ubuntu/evo-merge/final_merge//tree/None' for available files.

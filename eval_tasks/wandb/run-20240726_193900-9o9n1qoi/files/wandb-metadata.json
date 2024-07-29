@@ -1,0 +1,88 @@
+{
+    "os": "Linux-6.5.0-1020-aws-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-07-26T19:39:01.146896",
+    "startedAt": "2024-07-26T19:39:00.630570",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/ubuntu/evo-merge/eval_tasks/run_jmtbench_eval.py",
+    "codePathLocal": "run_jmtbench_eval.py",
+    "codePath": "eval_tasks/run_jmtbench_eval.py",
+    "git": {
+        "remote": "https://github.com/mssfj/evol-mergekit.git",
+        "commit": "01ab94dc1d9e24aee2ea44987dd5bfe806c94a93"
+    },
+    "email": "mss.fujiomto@gmail.com",
+    "root": "/home/ubuntu/evo-merge",
+    "host": "ip-172-31-15-195",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/miniconda3/envs/new_env/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3168.5804999999996,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3299.485,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3299.326,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3295.466,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3292.39,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3292.34,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2799.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3299.829,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 290.5665702819824,
+            "used": 184.9693145751953
+        }
+    },
+    "gpu": "NVIDIA A10G",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A10G",
+            "memory_total": 24146608128
+        }
+    ],
+    "memory": {
+        "total": 30.970794677734375
+    }
+}
